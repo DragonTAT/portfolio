@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- 默认英文 -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.title">Chen · Personal Site</title>
+  <meta name="description" content="Chen's personal homepage | MIS @ UA | Product/Data/Frontend | Travel & Entrepreneurship" data-i18n="meta.description" />
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23000'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='56' fill='%23fff'%3EC%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root { --bg:#0b0c0f; --surface:#12151a; --text:#e9edf1; --muted:#a7b0ba; --accent:#3b82f6; --accent-2:#22c55e; --card:#0f1217; --border:#1f2430; --shadow:0 10px 30px rgba(0,0,0,.35); --radius:18px; --maxw:1100px; }
+    @media (prefers-color-scheme: light){ :root{ --bg:#f7f8fb; --surface:#fff; --text:#0b1320; --muted:#5b6777; --card:#fff; --border:#e8ecf1; --shadow:0 10px 30px rgba(16,24,40,.08); } }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 600px at 70% -10%, rgba(59,130,246,.20), transparent 60%), radial-gradient(900px 500px at -10% 10%, rgba(34,197,94,.18), transparent 60%), var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,"PingFang SC","Noto Sans SC",Helvetica,Arial,sans-serif; letter-spacing:.2px;}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(100% - 32px, var(--maxw)); margin:0 auto}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1rem;border-radius:999px;border:1px solid var(--border);background:linear-gradient(180deg, var(--surface), var(--card)); box-shadow:var(--shadow); transition:transform .15s ease, background .2s ease, border-color .2s ease;}
+    .btn:hover{transform:translateY(-1px); border-color:color-mix(in oklab, var(--accent) 30%, var(--border))}
+    .btn.primary{background:linear-gradient(180deg, color-mix(in oklab, var(--accent) 20%, var(--surface)), var(--accent)); color:#fff; border-color:transparent}
+    .tag{display:inline-block;padding:.35rem .6rem;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:.85rem}
+    header{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:color-mix(in oklab, var(--bg) 85%, transparent); border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.75rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+    .brand-logo{width:28px;height:28px;border-radius:8px;background:var(--text);color:var(--bg);display:grid;place-items:center;font-size:.95rem}
+    nav a{color:var(--muted);margin-left:1rem;padding:.4rem .6rem;border-radius:10px}
+    nav a:hover{background:color-mix(in oklab, var(--surface)70%, transparent); color:var(--text)}
+    .hero{padding:72px 0 36px; display:grid; grid-template-columns:1.2fr .8fr; gap:36px; align-items:center}
+    .hero h1{font-size:clamp(2rem, 3.4vw + .8rem, 3.6rem); line-height:1.15; margin:0 0 12px}
+    .hero p.lead{margin:0 0 22px;color:var(--muted);font-size:1.05rem}
+    .hero-card{background:linear-gradient(180deg, var(--surface), var(--card)); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    .hero-actions{display:flex;gap:.8rem;flex-wrap:wrap}
+    .facts{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+    .facts .pill{border:1px solid var(--border);border-radius:999px;padding:.5rem .7rem;color:var(--muted);font-size:.9rem}
+    section{padding:56px 0}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .section-title h2{margin:0;font-size:1.6rem}
+    .grid{display:grid;gap:18px}
+    .grid.cards{grid-template-columns:repeat(auto-fit, minmax(240px, 1fr))}
+    .card{background:linear-gradient(180deg, var(--surface), var(--card)); border:1px solid var(--border); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px; font-size:1.1rem}
+    .muted{color:var(--muted)}
+    .list{display:grid;gap:10px}
+    footer{padding:30px 0 50px;color:var(--muted)}
+    @media (max-width:880px){ .hero{grid-template-columns:1fr} }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json" id="ldPerson">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chen",
+    "jobTitle": "MIS Student & Builder",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Arizona"},
+    "url": "https://example.com",
+    "sameAs": ["https://github.com/yourname","https://www.linkedin.com/in/yourname/"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="brand-logo">C</div>Chen</div>
+      <nav aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button id="langToggle" class="btn" aria-label="Switch language">🌐 中文</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div>
+        <h1 data-i18n-html="hero.title">
+          Hi, I'm <span style="color:var(--accent)">Chen</span> 👋<br/>MIS @ UA · Product / Data / Front-end
+        </h1>
+        <p class="lead" data-i18n="hero.lead">
+          I turn ideas into usable products: from a <strong>Leasing info platform</strong> to <strong>E-commerce & WhatsApp AI support</strong>, plus <strong>data automation & front-end</strong>. This page is my simple hub and project index.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects" data-i18n="hero.cta.projects">View Projects</a>
+          <a class="btn" href="#contact" data-i18n="hero.cta.contact">Contact Me</a>
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener" data-i18n="hero.cta.resume">Resume</a>
+        </div>
+        <div class="facts">
+          <span class="pill" data-i18n="hero.facts.location">📍 Tucson / PHX</span>
+          <span class="pill" data-i18n="hero.facts.travel">✈️ Travel & Loyalty</span>
+          <span class="pill" data-i18n="hero.facts.llm">🧪 Local LLM / RPi</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="list">
+          <div>
+            <span class="tag" data-i18n="hero.tags.now">Now</span>
+            <div class="muted" data-i18n="hero.now.text">Personal site reboot · index research · WhatsApp bot</div>
+          </div>
+          <div>
+            <span class="tag" data-i18n="hero.tags.skills">Skills</span>
+            <div class="muted" data-i18n="hero.skills.text">Vue 3 / TypeScript / Element Plus · Python data wrangling · SQL/3NF design</div>
+          </div>
+          <div>
+            <span class="tag" data-i18n="hero.tags.goals">Goals</span>
+            <div class="muted" data-i18n="hero.goals.text">Graduate & job hunt · Polish MVP · Release open-source tools</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-title">
+        <h2 data-i18n="about.title">About Me</h2>
+        <span class="tag" data-i18n="about.badge">Brief Intro</span>
+      </div>
+      <div class="grid cards">
+        <article class="card">
+          <h3 data-i18n="about.cards.background.title">Background</h3>
+          <p class="muted" data-i18n="about.cards.background.body">
+            MIS undergraduate (AMP planned) at the University of Arizona; I love systematizing and automating business processes, with coursework projects and internship experience.
+          </p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="about.cards.focus.title">Focus</h3>
+          <p class="muted" data-i18n="about.cards.focus.body">
+            Product / Data / Front-end tri-skill: requirements → data modeling → UI implementation → automation scripts.
+          </p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="about.cards.stack.title">Tooling</h3>
+          <p class="muted" data-i18n="about.cards.stack.body">
+            Vue 3 + TS, Element Plus, Python (pandas/openpyxl/pdfplumber), SQL, GitHub Pages, Raspberry Pi.
+          </p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="about.cards.interest.title">Interests</h3>
+          <p class="muted" data-i18n="about.cards.interest.body">
+            Airline loyalty, cross-border e-commerce, lightweight AI workflows, information visualization.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-title">
+        <h2 data-i18n="projects.title">Featured Projects</h2>
+        <a class="btn" href="https://github.com/yourname" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+      </div>
+      <div class="grid cards">
+        <article class="card">
+          <h3 data-i18n="projects.items.leasing.title">Leasing Information Management Platform</h3>
+          <p class="muted" data-i18n="projects.items.leasing.body">
+            SPV tables, subsidy de-dup logic, forms & validation; front-end with Vue3 + Element Plus, backend/data pipeline WIP.
+          </p>
+          <p><span class="tag">Vue3</span> <span class="tag">SQL</span> <span class="tag">Data Design</span></p>
+          <a class="btn" href="#" data-i18n="projects.items.leasing.link">Docs</a>
+        </article>
+        <article class="card">
+          <h3 data-i18n="projects.items.wa.title">WhatsApp AI Support & Order Intake</h3>
+          <p class="muted" data-i18n="projects.items.wa.body">
+            NowAI / Dify flow, Webhook, WA Business auto replies & ordering, pricing parser, Apple Wallet Pass plan.
+          </p>
+          <p><span class="tag">Python</span> <span class="tag">Webhook</span> <span class="tag">Automation</span></p>
+          <a class="btn" href="#" data-i18n="projects.items.wa.link">Flow</a>
+        </article>
+        <article class="card">
+          <h3 data-i18n="projects.items.site.title">Personal GitHub Pages Site</h3>
+          <p class="muted" data-i18n="projects.items.site.body">
+            This template: pure HTML+CSS, light/dark auto, zero dependency; great for quick deploy and later componentization.
+          </p>
+          <p><span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">Static</span></p>
+          <a class="btn" href="#" data-i18n="projects.items.site.link">Guide</a>
+        </article>
+        <article class="card">
+          <h3 data-i18n="projects.items.tools.title">Data Automation Mini-tools</h3>
+          <p class="muted" data-i18n="projects.items.tools.body">
+            Batch scripts with pdfplumber / openpyxl / pandas: report extraction, cleaning, naming normalization.
+          </p>
+          <p><span class="tag">Python</span> <span class="tag">ETL</span> <span class="tag">CLI</span></p>
+          <a class="btn" href="#" data-i18n="projects.items.tools.link">Repo</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-title">
+        <h2 data-i18n="exp.title">Experience</h2>
+        <span class="tag" data-i18n="exp.badge">Recent 2 Years</span>
+      </div>
+      <div class="grid cards">
+        <article class="card">
+          <h3 data-i18n="exp.items.intern.title">Intern · Product & Data</h3>
+          <p class="muted" data-i18n="exp.items.intern.body">
+            Process research, DB modeling, UI prototypes, automation scripts; pushed MVP and iterations.
+          </p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="exp.items.course.title">Course Projects · SA & Front-end</h3>
+          <p class="muted" data-i18n="exp.items.course.body">
+            ER→Relational, 3NF, UI with PureAdmin/Element Plus, docs & presentations.
+          </p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="exp.items.biz.title">Entrepreneurship · E-commerce & Channels</h3>
+          <p class="muted" data-i18n="exp.items.biz.body">
+            Perfume micro-store, cross-border channels, auto price & stock sheets, WA content.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-title">
+        <h2 data-i18n="contact.title">Contact Me</h2>
+        <span class="tag" data-i18n="contact.badge">Open to collaborate</span>
+      </div>
+      <div class="grid" style="grid-template-columns: 1.2fr .8fr; gap:18px">
+        <form class="card" action="mailto:you@example.com" method="post" enctype="text/plain">
+          <h3 data-i18n="contact.form.title">Quick Message</h3>
+          <label>
+            <span class="muted" data-i18n="contact.form.email">Your Email</span>
+            <input required type="email" name="email" placeholder="name@example.com" style="width:100%;margin-top:6px;margin-bottom:10px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text)">
+          </label>
+          <label>
+            <span class="muted" data-i18n="contact.form.message">Message</span>
+            <textarea required name="message" rows="5" placeholder="Hello, I'd like to know..." style="width:100%;margin-top:6px;margin-bottom:14px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--surface);color:var(--text);"></textarea>
+          </label>
+          <button class="btn primary" type="submit" data-i18n="contact.form.submit">Send</button>
+          <p class="muted" style="font-size:.85rem;margin-top:10px" data-i18n="contact.form.note">
+            Tip: on static sites you can switch to Formspree / Google Forms, etc.
+          </p>
+        </form>
+        <div class="card">
+          <h3 data-i18n="contact.links.title">Social / Links</h3>
+          <ul class="list muted" style="padding-left:0; list-style:none;">
+            <li>📧 Email: <a href="mailto:you@example.com">you@example.com</a></li>
+            <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/yourname/" target="_blank" rel="noopener">/in/yourname</a></li>
+            <li>💻 GitHub: <a href="https://github.com/yourname" target="_blank" rel="noopener">@yourname</a></li>
+            <li>🧾 <a href="resume.pdf" target="_blank" rel="noopener" data-i18n="contact.links.resume">Resume (PDF)</a></li>
+          </ul>
+          <p class="muted" style="font-size:.9rem" data-i18n="contact.links.note">Replace placeholders with your real links.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+        <div>© <span id="year"></span> Chen. <span data-i18n="footer.rights">All rights reserved.</span></div>
+        <div class="muted" data-i18n="footer.built">Built with ♥ · Deployable on GitHub Pages</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  </script>
+
+  <!-- 多语言引擎 -->
+  <script src="./js/i18n.js"></script>
+  <script>
+    // 默认逻辑：localStorage > 浏览器语言 > 英文
+    const stored = localStorage.getItem('lang');
+    const browserLang = (navigator.language || 'en').toLowerCase().startsWith('zh') ? 'zh' : 'en';
+    const defaultLang = stored || browserLang || 'en';
+
+    I18N.init({
+      defaultLang,
+      supported: ['en','zh'],
+      files: { en: './i18n/en.json', zh: './i18n/zh.json' },
+      onLangApplied(lang){
+        // 切换 <html lang> 与切换按钮文字
+        document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+        const btn = document.getElementById('langToggle');
+        if(btn) btn.textContent = lang === 'en' ? '🌐 中文' : '🌐 English';
+        // 同步结构化数据 jobTitle（示例）
+        const ld = document.getElementById('ldPerson');
+        if (ld) {
+          try {
+            const data = JSON.parse(ld.textContent);
+            data.jobTitle = I18N.t('meta.jobTitle', data.jobTitle);
+            ld.textContent = JSON.stringify(data);
+          } catch(e){}
+        }
+      }
+    });
+
+    // 切换按钮
+    document.getElementById('langToggle').addEventListener('click', ()=>{
+      I18N.toggle();
+    });
+  </script>
+</body>
+</html>
