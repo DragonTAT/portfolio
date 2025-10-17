@@ -59,6 +59,7 @@
   "projects": {
     "title": "Selected Projects",
     "github": "GitHub",
+    "viewhint": "click to view detail",
     "items": {
       "leasing": {
         "title": "AI-Driven Business Operations System",
@@ -84,6 +85,32 @@
         "title": "Sunlink Tram Real-Time Tracker",
         "body": "Raspberry Pi + Cloudflare Tunnel project showing live Tucson tram positions with caching and rate-limit handling.",
         "link": "Live Demo"
+      }
+    },
+    "modals": {
+      "leasing": {
+        "intro": "Full system design with SPV tables, subsidy de-dup, and validated forms; Vue3 + Element Plus front-end with SQL-ready schema.",
+        "point1": "ER → relational schema (3NF) and indexing plan",
+        "point2": "Vue3 form validation & reusable components",
+        "point3": "Data pipeline WIP; docs and diagrams available"
+      },
+      "wa": {
+        "intro": "NowAI / Dify flow with webhooks and WA Business automation, pricing parser, and Apple Wallet Pass plan.",
+        "point1": "Webhook orchestration and fallback logic",
+        "point2": "Prompt cost control and evaluation",
+        "point3": "Planned Apple Wallet Pass integration"
+      },
+      "site": {
+        "intro": "Zero-dependency template with light/dark auto, great for fast deploy and later componentization.",
+        "point1": "Pure HTML + CSS, no build step",
+        "point2": "i18n via JSON loader and data attributes",
+        "point3": "Deployable on GitHub Pages / Cloudflare"
+      },
+      "tools": {
+        "intro": "Batch scripts using pdfplumber / openpyxl / pandas for extraction, cleaning, normalization.",
+        "point1": "CLI workflow and config-driven parsing",
+        "point2": "Consistent naming & audit trail",
+        "point3": "Extensible recipe library"
       }
     }
   },

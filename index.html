@@ -42,6 +42,37 @@
     .list{display:grid;gap:10px}
     footer{padding:30px 0 50px;color:var(--muted)}
     @media (max-width:880px){ .hero{grid-template-columns:1fr} }
+    /* —— Modal 基础样式 —— */
+    .modal-overlay{
+      position: fixed; inset: 0; background: rgba(0,0,0,.55);
+      display: none; align-items: center; justify-content: center;
+      z-index: 9999; padding: 20px;
+    }
+    .modal-overlay.active{ display: flex; }
+    .modal{
+      width: min(100%, 820px); max-height: 85vh; overflow: auto;
+      background: linear-gradient(180deg, var(--surface), var(--card));
+      border:1px solid var(--border); border-radius: var(--radius);
+      box-shadow: var(--shadow); color: var(--text);
+    }
+    .modal header{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 18px; border-bottom:1px solid var(--border);
+    }
+    .modal header h3{ margin:0; font-size:1.2rem }
+    .modal .content{ padding: 16px 18px; display:grid; gap:12px }
+    .modal .content .muted{ color: var(--muted) }
+    .modal footer{ padding:14px 18px; border-top:1px solid var(--border); display:flex; gap:10px; justify-content:flex-end }
+    .modal .close-btn{
+      border:none; background:transparent; color:var(--muted); font-size:20px; line-height:1;
+      cursor:pointer; padding:6px 8px; border-radius:8px;
+    }
+    .modal .close-btn:hover{ background: color-mix(in oklab, var(--surface)70%, transparent) }
+    .modal img{
+      width:100%; height:auto; border-radius:12px; border:1px solid var(--border);
+    }
+    article.card[data-modal-target]{ cursor: pointer; }
+    article.card[data-modal-target]:focus{ outline:2px solid var(--accent); outline-offset:2px; }
   </style>
 
   <!-- Structured Data -->
@@ -149,40 +180,36 @@
     <section id="projects">
       <div class="section-title">
         <h2 data-i18n="projects.title">Featured Projects</h2>
-        <a class="btn" href="https://github.com/yourname" target="_blank" rel="noopener" data-i18n="projects.github">GitHub</a>
+        <span class="muted" data-i18n="projects.viewhint">click to view detail</span>
       </div>
       <div class="grid cards">
-        <article class="card">
+        <article class="card" data-modal-target="modal-leasing" role="button" tabindex="0">
           <h3 data-i18n="projects.items.leasing.title">Leasing Information Management Platform</h3>
           <p class="muted" data-i18n="projects.items.leasing.body">
             SPV tables, subsidy de-dup logic, forms & validation; front-end with Vue3 + Element Plus, backend/data pipeline WIP.
           </p>
           <p><span class="tag">Vue3</span> <span class="tag">SQL</span> <span class="tag">Data Design</span></p>
-          <a class="btn" href="#" data-i18n="projects.items.leasing.link">Docs</a>
         </article>
-        <article class="card">
+        <article class="card" data-modal-target="modal-wa" role="button" tabindex="0">
           <h3 data-i18n="projects.items.wa.title">WhatsApp AI Support & Order Intake</h3>
           <p class="muted" data-i18n="projects.items.wa.body">
             NowAI / Dify flow, Webhook, WA Business auto replies & ordering, pricing parser, Apple Wallet Pass plan.
           </p>
           <p><span class="tag">Python</span> <span class="tag">Webhook</span> <span class="tag">Automation</span></p>
-          <a class="btn" href="#" data-i18n="projects.items.wa.link">Flow</a>
         </article>
-        <article class="card">
+        <article class="card" data-modal-target="modal-site" role="button" tabindex="0">
           <h3 data-i18n="projects.items.site.title">Personal GitHub Pages Site</h3>
           <p class="muted" data-i18n="projects.items.site.body">
             This template: pure HTML+CSS, light/dark auto, zero dependency; great for quick deploy and later componentization.
           </p>
           <p><span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">Static</span></p>
-          <a class="btn" href="#" data-i18n="projects.items.site.link">Guide</a>
         </article>
-        <article class="card">
+        <article class="card" data-modal-target="modal-tools" role="button" tabindex="0">
           <h3 data-i18n="projects.items.tools.title">Data Automation Mini-tools</h3>
           <p class="muted" data-i18n="projects.items.tools.body">
             Batch scripts with pdfplumber / openpyxl / pandas: report extraction, cleaning, naming normalization.
           </p>
           <p><span class="tag">Python</span> <span class="tag">ETL</span> <span class="tag">CLI</span></p>
-          <a class="btn" href="#" data-i18n="projects.items.tools.link">Repo</a>
         </article>
       </div>
     </section>
@@ -271,6 +298,103 @@
         </div>
       </div>
     </section>
+    <!-- ===== Project Detail Modals ===== -->
+    <div class="modal-overlay" id="modal-leasing">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-leasing-title">
+        <header>
+          <h3 id="modal-leasing-title" data-i18n="projects.items.leasing.title">Leasing Information Management Platform</h3>
+          <button class="close-btn" data-close aria-label="Close">✕</button>
+        </header>
+        <div class="content">
+          <img src="./assets/projects/leasing/cover.jpg" alt="Leasing platform preview">
+          <p class="muted" data-i18n="projects.modals.leasing.intro">
+            Full system design with SPV tables, subsidy de-dup, and validated forms; Vue3 + Element Plus front-end with SQL-ready schema.
+          </p>
+          <ul class="list">
+            <li data-i18n="projects.modals.leasing.point1">ER → relational schema (3NF) and indexing plan</li>
+            <li data-i18n="projects.modals.leasing.point2">Vue3 form validation &amp; reusable components</li>
+            <li data-i18n="projects.modals.leasing.point3">Data pipeline WIP; docs and diagrams available</li>
+          </ul>
+        </div>
+        <footer>
+          <a class="btn" href="#" data-i18n="projects.items.leasing.link">Docs</a>
+          <button class="btn" data-close data-i18n="common.close">Close</button>
+        </footer>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-wa">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-wa-title">
+        <header>
+          <h3 id="modal-wa-title" data-i18n="projects.items.wa.title">WhatsApp AI Support &amp; Order Intake</h3>
+          <button class="close-btn" data-close aria-label="Close">✕</button>
+        </header>
+        <div class="content">
+          <img src="./assets/projects/wa/flow.jpg" alt="WhatsApp AI flow">
+          <p class="muted" data-i18n="projects.modals.wa.intro">
+            NowAI / Dify flow with webhooks and WA Business automation, pricing parser, and Apple Wallet Pass plan.
+          </p>
+          <ul class="list">
+            <li data-i18n="projects.modals.wa.point1">Webhook orchestration and fallback logic</li>
+            <li data-i18n="projects.modals.wa.point2">Prompt cost control and evaluation</li>
+            <li data-i18n="projects.modals.wa.point3">Planned Apple Wallet Pass integration</li>
+          </ul>
+        </div>
+        <footer>
+          <a class="btn" href="#" data-i18n="projects.items.wa.link">Flow</a>
+          <button class="btn" data-close data-i18n="common.close">Close</button>
+        </footer>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-site">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-site-title">
+        <header>
+          <h3 id="modal-site-title" data-i18n="projects.items.site.title">Personal GitHub Pages Site</h3>
+          <button class="close-btn" data-close aria-label="Close">✕</button>
+        </header>
+        <div class="content">
+          <img src="./assets/projects/site/cover.jpg" alt="Personal site preview">
+          <p class="muted" data-i18n="projects.modals.site.intro">
+            Zero-dependency template with light/dark auto, great for fast deploy and later componentization.
+          </p>
+          <ul class="list">
+            <li data-i18n="projects.modals.site.point1">Pure HTML + CSS, no build step</li>
+            <li data-i18n="projects.modals.site.point2">i18n via JSON loader and data attributes</li>
+            <li data-i18n="projects.modals.site.point3">Deployable on GitHub Pages / Cloudflare</li>
+          </ul>
+        </div>
+        <footer>
+          <a class="btn" href="#" data-i18n="projects.items.site.link">Guide</a>
+          <button class="btn" data-close data-i18n="common.close">Close</button>
+        </footer>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-tools">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-tools-title">
+        <header>
+          <h3 id="modal-tools-title" data-i18n="projects.items.tools.title">Data Automation Mini-tools</h3>
+          <button class="close-btn" data-close aria-label="Close">✕</button>
+        </header>
+        <div class="content">
+          <img src="./assets/projects/tools/cover.jpg" alt="Automation tools preview">
+          <p class="muted" data-i18n="projects.modals.tools.intro">
+            Batch scripts using pdfplumber / openpyxl / pandas for extraction, cleaning, normalization.
+          </p>
+          <ul class="list">
+            <li data-i18n="projects.modals.tools.point1">CLI workflow and config-driven parsing</li>
+            <li data-i18n="projects.modals.tools.point2">Consistent naming &amp; audit trail</li>
+            <li data-i18n="projects.modals.tools.point3">Extensible recipe library</li>
+          </ul>
+        </div>
+        <footer>
+          <a class="btn" href="#" data-i18n="projects.items.tools.link">Repo</a>
+          <button class="btn" data-close data-i18n="common.close">Close</button>
+        </footer>
+      </div>
+    </div>
+    <!-- ===== /Project Detail Modals ===== -->
   </main>
 
   <footer>
@@ -328,6 +452,54 @@
     document.getElementById('langToggle').addEventListener('click', ()=>{
       I18N.toggle();
     });
+  </script>
+  <script>
+    // —— Modal 打开/关闭 —— //
+    (function(){
+      const open = (id)=>{
+        const ov = document.getElementById(id);
+        if(!ov) return;
+        ov.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        // 将焦点移入弹窗，便于无障碍
+        const dlg = ov.querySelector('.modal');
+        if (dlg) dlg.setAttribute('tabindex','-1'), dlg.focus();
+      };
+      const close = (ov)=>{
+        ov.classList.remove('active');
+        document.body.style.overflow = '';
+      };
+      // 打开
+      document.addEventListener('click', (e)=>{
+        const btn = e.target.closest('[data-modal-target]');
+        if (btn){
+          const id = btn.getAttribute('data-modal-target');
+          open(id);
+        }
+      });
+      // 关闭（点击遮罩 或 带 data-close 的按钮）
+      document.querySelectorAll('.modal-overlay').forEach(ov=>{
+        ov.addEventListener('click', (e)=>{
+          if (e.target === ov || e.target.closest('[data-close]')){
+            close(ov);
+          }
+        });
+      });
+      // ESC 关闭
+      document.addEventListener('keydown', (e)=>{
+        if (e.key === 'Escape'){
+          document.querySelectorAll('.modal-overlay.active').forEach(ov=>close(ov));
+        }
+      });
+      document.addEventListener('keydown', (e)=>{
+        const card = e.target.closest && e.target.closest('article.card[data-modal-target]');
+        if(card && (e.key === 'Enter' || e.key === ' ')){
+          e.preventDefault();
+          const id = card.getAttribute('data-modal-target');
+          open(id);
+        }
+      });
+    })();
   </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Chen · 个人网站",
-    "description": "Chen 的个人主页｜亚利桑那大学 MIS｜产品 / 数据 / 前端｜旅行与创业项目",
+    "description": "Chen 的个人主页｜亚利桑那大学 MIS",
     "jobTitle": "MIS 学生与创作者"
   },
   "nav": {
@@ -11,7 +11,7 @@
     "contact": "联系"
   },
   "hero": {
-    "title": "Hi，我是 <span style=\"color:var(--accent)\">Chen</span> 👋<br/>MIS @ UA · 产品 / 数据 / 前端",
+    "title": "Hi，我是 <span style=\"color:var(--accent)\">陈颖川</span> 👋<br/> ",
     "lead": "我喜欢把想法做成可用的产品：从<strong>融资租赁信息平台</strong>到<strong>电商与 WhatsApp AI 客服</strong>，也做<strong>数据自动化与前端</strong>。这页是我的简洁主页与项目导航。",
     "cta": {
       "projects": "查看项目",
@@ -59,6 +59,7 @@
   "projects": {
     "title": "精选项目",
     "github": "GitHub",
+    "viewhint": "点击以查看详情",
     "items": {
       "leasing": {
         "title": "融资租赁信息管理平台",
@@ -80,6 +81,32 @@
         "body": "pdfplumber / openpyxl / pandas 批处理：报表抽取、清洗、命名规范化。",
         "link": "仓库"
       }
+    },
+    "modals": {
+      "leasing": {
+        "intro": "端到端系统设计：含 SPV 表、补贴去重、表单校验；前端 Vue3 + Element Plus，SQL 友好型数据结构。",
+        "point1": "ER → 3NF 关系模型与索引规划",
+        "point2": "表单校验与可复用组件",
+        "point3": "数据管道搭建中；含文档与图示"
+      },
+      "wa": {
+        "intro": "NowAI / Dify 编排 + Webhook，WA Business 自动化；价格解析与 Apple Wallet Pass 规划。",
+        "point1": "Webhook 编排与回退逻辑",
+        "point2": "Prompt 成本控制与评测",
+        "point3": "计划对接 Apple Wallet Pass"
+      },
+      "site": {
+        "intro": "零依赖模板，支持亮暗自动显示，适合快速部署与后续组件化。",
+        "point1": "纯 HTML + CSS，无构建步骤",
+        "point2": "通过 JSON 与 data 属性实现 i18n",
+        "point3": "可部署于 GitHub Pages / Cloudflare"
+      },
+      "tools": {
+        "intro": "使用 pdfplumber / openpyxl / pandas 批量抽取、清洗与规范化处理。",
+        "point1": "CLI 工作流与配置化解析",
+        "point2": "统一命名与审计线索",
+        "point3": "可扩展的配方库"
+      }
     }
   },
   "exp": {
@@ -96,7 +123,7 @@
       },
       "biz": {
         "title": "创业尝试 · 电商与渠道",
-        "body": "香水小店、跨境渠道、价格与库存自动化表格、WA 渠道内容。"
+        "body": "1。"
       }
     }
   },
