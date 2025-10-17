@@ -84,7 +84,8 @@
         <div class="hero-actions">
           <a class="btn primary" href="#projects" data-i18n="hero.cta.projects">View Projects</a>
           <a class="btn" href="#contact" data-i18n="hero.cta.contact">Contact Me</a>
-          <a class="btn" href="resume.pdf" target="_blank" rel="noopener" data-i18n="hero.cta.resume">Resume</a>
+          <a class="btn" href="resume_en.pdf#view=FitH" target="_blank" rel="noopener" data-i18n="hero.cta.resumeEN">Resume (EN)</a>
+          <a class="btn" href="resume_zh.pdf#view=FitH" target="_blank" rel="noopener" data-i18n="hero.cta.resumeZH">简历（中文）</a>
         </div>
         <div class="facts">
           <span class="pill" data-i18n="hero.facts.location">📍 Tucson / PHX</span>
@@ -221,6 +222,7 @@
         <span class="tag" data-i18n="contact.badge">Open to collaborate</span>
       </div>
       <div class="grid" style="grid-template-columns: 1.2fr .8fr; gap:18px">
+        <!--
         <form class="card" action="mailto:you@example.com" method="post" enctype="text/plain">
           <h3 data-i18n="contact.form.title">Quick Message</h3>
           <label>
@@ -236,15 +238,36 @@
             Tip: on static sites you can switch to Formspree / Google Forms, etc.
           </p>
         </form>
+        -->
         <div class="card">
           <h3 data-i18n="contact.links.title">Social / Links</h3>
-          <ul class="list muted" style="padding-left:0; list-style:none;">
-            <li>📧 Email: <a href="mailto:you@example.com">you@example.com</a></li>
-            <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/yourname/" target="_blank" rel="noopener">/in/yourname</a></li>
-            <li>💻 GitHub: <a href="https://github.com/yourname" target="_blank" rel="noopener">@yourname</a></li>
-            <li>🧾 <a href="resume.pdf" target="_blank" rel="noopener" data-i18n="contact.links.resume">Resume (PDF)</a></li>
+          <ul class="list muted" style="padding-left:0; list-style:none; margin:0">
+            <li style="display:flex;align-items:center;gap:8px">
+              <span aria-hidden="true">📧</span>
+              <span data-i18n="contact.links.emailLabel">Email:</span>&nbsp;
+              <a href="mailto:yingchuan3333@gmail.com">yingchuan3333@gmail.com</a>
+            </li>
+            <li style="display:flex;align-items:center;gap:8px">
+              <span aria-hidden="true">💼</span>
+              <span data-i18n="contact.links.linkedinLabel">LinkedIn:</span>&nbsp;
+              <a href="https://www.linkedin.com/in/ycchen33" target="_blank" rel="noopener">/in/ycchen33</a>
+            </li>
           </ul>
-          <p class="muted" style="font-size:.9rem" data-i18n="contact.links.note">Replace placeholders with your real links.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0 0 8px" data-i18n="contact.links.resumeTitle">Resume</h4>
+          <p class="muted" style="margin:0 0 12px" data-i18n="contact.links.resumeNote">
+            Open the PDF in a new tab for preview.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="resume_en.pdf#view=FitH" target="_blank" rel="noopener" data-i18n="contact.links.resumeEN">
+              Resume (EN)
+            </a>
+            <a class="btn" href="resume_zh.pdf#view=FitH" target="_blank" rel="noopener" data-i18n="contact.links.resumeZH">
+              简历（中文）
+            </a>
+          </div>
         </div>
       </div>
     </section>

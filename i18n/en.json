@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Chen · Personal Site",
-    "description": "Chen's personal homepage | MIS @ UA | Product/Data/Frontend | Travel & Entrepreneurship",
-    "jobTitle": "MIS Student & Builder"
+    "title": "Yingchuan Chen · Portfolio",
+    "description": "MIS & Industrial Engineering Student @ UA | Product · Data · Automation | AI-driven projects & real-world solutions",
+    "jobTitle": "MIS & Industrial Engineering Student"
   },
   "nav": {
     "about": "About",
@@ -11,111 +11,119 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Hi, I'm <span style=\"color:var(--accent)\">Chen</span> 👋<br/>MIS @ UA · Product / Data / Front-end",
-    "lead": "I turn ideas into usable products: from a <strong>Leasing info platform</strong> to <strong>E-commerce & WhatsApp AI support</strong>, plus <strong>data automation & front-end</strong>. This page is my simple hub and project index.",
+    "title": "Hi, I'm <span style=\"color:var(--accent)\">Chen</span> 👋<br/>A MIS Student @ UA",
+    "lead": "I build data-driven and automation-focused solutions — from AI-powered system design to SQL data modeling and visualization. Experienced in product development, process optimization, and cross-functional collaboration.",
     "cta": {
       "projects": "View Projects",
       "contact": "Contact Me",
-      "resume": "Resume"
+      "resume": "Resume (PDF)",
+      "resumeEN": "Resume (EN)",
+      "resumeZH": "Resume (ZH)"
     },
     "facts": {
-      "location": "📍 Tucson / PHX",
-      "travel": "✈️ Travel & Loyalty",
-      "llm": "🧪 Local LLM / RPi"
+      "location": "📍 Tucson, AZ / Xiamen, CN",
+      "travel": "✈️ Global Wildcat Award Recipient",
+      "llm": "🤖 AI & Automation Projects"
     },
     "tags": {
-      "now": "Now",
+      "now": "Currently",
       "skills": "Skills",
-      "goals": "Goals"
+      "goals": "Next Goals"
     },
-    "now": { "text": "Personal site reboot · index research · WhatsApp bot" },
-    "skills": { "text": "Vue 3 / TypeScript / Element Plus · Python data wrangling · SQL/3NF design" },
-    "goals": { "text": "Graduate & job hunt · Polish MVP · Release open-source tools" }
+    "now": { "text": "Interning in Product Development & AI Automation · Improving SQL + Vue.js systems" },
+    "skills": { "text": "Python, SQL, Tableau, Vue.js, Dify, ChatGPT, ARENA, Google Analytics" },
+    "goals": { "text": "Graduate in 2026 · Expand product AI portfolio · Contribute to real-world automation solutions" }
   },
   "about": {
     "title": "About Me",
-    "badge": "Brief Intro",
+    "badge": "Profile",
     "cards": {
       "background": {
         "title": "Background",
-        "body": "MIS undergraduate (AMP planned) at the University of Arizona; I love systematizing and automating business processes, with coursework projects and internship experience."
+        "body": "Undergraduate student in Management Information Systems & Industrial Engineering at the University of Arizona. Passionate about applying data and automation to improve business efficiency."
       },
       "focus": {
         "title": "Focus",
-        "body": "Product / Data / Front-end tri-skill: requirements → data modeling → UI implementation → automation scripts."
+        "body": "Product development and data-driven decision making — combining system design, process optimization, and automation with AI tools."
       },
       "stack": {
-        "title": "Tooling",
-        "body": "Vue 3 + TS, Element Plus, Python (pandas/openpyxl/pdfplumber), SQL, GitHub Pages, Raspberry Pi."
+        "title": "Technical Stack",
+        "body": "Python · SQL · Tableau · Vue.js · Dify · ChatGPT · ARENA Simulation · Google Analytics"
       },
       "interest": {
         "title": "Interests",
-        "body": "Airline loyalty, cross-border e-commerce, lightweight AI workflows, information visualization."
+        "body": "AI-powered workflow automation, data visualization, process optimization, and cross-border business innovation."
       }
     }
   },
   "projects": {
-    "title": "Featured Projects",
+    "title": "Selected Projects",
     "github": "GitHub",
     "items": {
       "leasing": {
-        "title": "Leasing Information Management Platform",
-        "body": "SPV tables, subsidy de-dup logic, forms & validation; front-end with Vue3 + Element Plus, backend/data pipeline WIP.",
+        "title": "AI-Driven Business Operations System",
+        "body": "Led product design and SQL database modeling for a client management system. Built Vue.js demo interface and applied AI automation to optimize workflows, improving delivery efficiency.",
+        "link": "Overview"
+      },
+      "lululemon": {
+        "title": "Lululemon Retail Operations Database",
+        "body": "Team lead for Oracle SQL database simulation. Created ER diagrams, schema, and advanced performance queries for retail analytics.",
         "link": "Docs"
       },
-      "wa": {
-        "title": "WhatsApp AI Support & Order Intake",
-        "body": "NowAI / Dify flow, Webhook, WA Business auto replies & ordering, pricing parser, Apple Wallet Pass plan.",
-        "link": "Flow"
+      "wine": {
+        "title": "Wine Sales Data Analysis (Tableau)",
+        "body": "Analyzed national sales datasets, identified consumer trends, and built interactive dashboards for data-driven marketing insights.",
+        "link": "Dashboard"
       },
-      "site": {
-        "title": "Personal GitHub Pages Site",
-        "body": "This template: pure HTML+CSS, light/dark auto, zero dependency; great for quick deploy and later componentization.",
-        "link": "Guide"
+      "restaurant": {
+        "title": "Restaurant Operations Optimization (ARENA)",
+        "body": "Simulated restaurant workflow and proposed changes that reduced average wait time by 30% in model testing.",
+        "link": "Simulation"
       },
-      "tools": {
-        "title": "Data Automation Mini-tools",
-        "body": "Batch scripts with pdfplumber / openpyxl / pandas: report extraction, cleaning, naming normalization.",
-        "link": "Repo"
+      "sunlink": {
+        "title": "Sunlink Tram Real-Time Tracker",
+        "body": "Raspberry Pi + Cloudflare Tunnel project showing live Tucson tram positions with caching and rate-limit handling.",
+        "link": "Live Demo"
       }
     }
   },
   "exp": {
     "title": "Experience",
-    "badge": "Recent 2 Years",
+    "badge": "Professional & Leadership",
     "items": {
       "intern": {
-        "title": "Intern · Product & Data",
-        "body": "Process research, DB modeling, UI prototypes, automation scripts; pushed MVP and iterations."
+        "title": "Business Operations & Product Development Intern · Xiamen Port Development Co., Ltd.",
+        "body": "Collected requirements for 3 client information system projects. Designed system architecture, SQL database, and front-end demos in Vue.js. Implemented AI automation via Dify and ChatGPT, enhancing project efficiency."
       },
-      "course": {
-        "title": "Course Projects · SA & Front-end",
-        "body": "ER→Relational, 3NF, UI with PureAdmin/Element Plus, docs & presentations."
+      "club": {
+        "title": "Eller Rising Professionals · Club Member",
+        "body": "Participated in fundraising and community projects, including 4P’s competition raising $4,000+ and financial literacy outreach events."
       },
-      "biz": {
-        "title": "Entrepreneurship · E-commerce & Channels",
-        "body": "Perfume micro-store, cross-border channels, auto price & stock sheets, WA content."
+      "other": {
+        "title": "Course & Team Projects",
+        "body": "Designed data models and dashboards across SQL, Tableau, and ARENA; led documentation and presentation for project outcomes."
       }
     }
   },
   "contact": {
     "title": "Contact Me",
-    "badge": "Open to collaborate",
+    "badge": "Let's Connect",
     "form": {
       "title": "Quick Message",
       "email": "Your Email",
       "message": "Message",
       "submit": "Send",
-      "note": "Tip: on static sites you can switch to Formspree / Google Forms, etc."
+      "note": "You can also reach me directly at yingchuan3333@gmail.com"
     },
     "links": {
       "title": "Social / Links",
       "resume": "Resume (PDF)",
-      "note": "Replace placeholders with your real links."
+      "resumeEN": "Resume (EN)",
+      "resumeZH": "Resume (CN)"
     }
   },
   "footer": {
-    "rights": "All rights reserved.",
-    "built": "Built with ♥ · Deployable on GitHub Pages"
+    "rights": "© 2025 Yingchuan Chen. All rights reserved.",
+    "built": "Built with ♥ · Hosted on GitHub Pages"
   }
 }

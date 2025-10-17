@@ -16,7 +16,9 @@
     "cta": {
       "projects": "查看项目",
       "contact": "联系我",
-      "resume": "简历"
+      "resume": "简历",
+      "resumeEN": "英文简历",
+      "resumeZH": "中文简历"
     },
     "facts": {
       "location": "📍 Tucson / PHX",
@@ -109,9 +111,14 @@
       "note": "提示：静态站可使用 Formspree / Google Forms 等。"
     },
     "links": {
-      "title": "社交 / Links",
+      "title": "社交 / 链接",
+      "emailLabel": "邮箱：",
+      "linkedinLabel": "LinkedIn：",
+      "resumeTitle": "简历",
+      "resumeNote": "在新标签页中预览 PDF。",
       "resume": "简历（PDF）",
-      "note": "把以上占位链接替换为你的真实链接。"
+      "resumeEN": "英文简历",
+      "resumeZH": "中文简历"
     }
   },
   "footer": {
