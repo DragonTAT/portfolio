@@ -159,6 +159,10 @@
     },
     "links": {
       "title": "Social / Links",
+      "emailLabel": "Email：",
+      "linkedinLabel": "LinkedIn：",
+      "resumeTitle": "Resume",
+      "resumeNote": "View in the new tab PDF.",
       "resume": "Resume (PDF)",
       "resumeEN": "Resume (EN)",
       "resumeZH": "Resume (CN)"
