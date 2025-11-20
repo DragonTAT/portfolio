@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "title": "Yingchuan Chen · Portfolio",
+    "description": "MIS & Industrial Engineering Student @ UA | Product · Data · Automation | AI-driven projects & real-world solutions",
+    "jobTitle": "MIS & Industrial Engineering Student"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm <span style=\"color:var(--accent)\">Chen</span> 👋",
+    "lead": "I love tinkering with technology and turning ideas into working products — using smarter ways to solve real problems.",
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Contact Me",
+      "resume": "Resume (PDF)",
+      "resumeEN": "Resume (EN)",
+      "resumeZH": "Resume (ZH)"
+    },
+    "facts": {
+      "location": "📍 Tucson, AZ",
+      "travel": "✈️ Travel",
+      "llm": "⚽️ Soccer"
+    },
+    "tags": {
+      "now": "Currently",
+      "skills": "Skills",
+      "goals": "Next Goals"
+    },
+    "now": { "text": "Interning in Product Development & AI Automation · Improving SQL + Vue.js systems" },
+    "skills": { "text": "Python, SQL, Tableau, Dify, ARENA, Google Analytics" },
+    "goals": { "text": "Graduate in 2026 · Expand product AI portfolio · Contribute to real-world automation solutions" }
+  },
+  "blog": {
+    "latest": {
+      "title": "Latest Posts",
+      "items": {
+        "1": {
+          "meta": "Nov 2024 · Personal Site",
+          "title": "Title 1"
+        },
+        "2": {
+          "meta": "Oct 2024 · Product & Data",
+          "title": "Title 2"
+        },
+        "3": {
+          "meta": "Sep 2024 · Learning Log",
+          "title": "Title 3"
+        }
+      },
+      "viewAll": "View all"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "badge": "Profile",
+    "cards": {
+      "background": {
+        "title": "Background",
+        "body": "Currently a senior majoring in Management Information Systems at the University of Arizona’s Eller College of Management, and a student in the MIS Accelerated Master’s Program (AMP)."
+      },
+      "focus": {
+        "title": "Focus",
+        "body": "Product development and data-driven decision making — combining system design, process optimization, and automation with AI tools."
+      },
+      "stack": {
+        "title": "Technical Stack",
+        "body": "Python · SQL · Tableau · Vue.js · Dify · ARENA Simulation · Google Analytics"
+      },
+      "interest": {
+        "title": "Interests",
+        "body": "I enjoy computers, AI, data, photography, skiing, travel, aviation, consumer tech, and football. I love the satisfaction of solving problems and exploring new possibilities through continuous learning."
+      }
+    }
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "github": "GitHub",
+    "viewhint": "click to view detail",
+    "items": {
+      "leasing": {
+        "title": "AI-Driven Business Operations System",
+        "body": "Led product design and SQL database modeling for a client management system. Built Vue.js demo interface and applied AI automation to optimize workflows, improving delivery efficiency.",
+        "link": "Overview"
+      },
+      "wa": {
+        "title": "Lululemon Retail Operations Database",
+        "body": "Team lead for Oracle SQL database simulation. Created ER diagrams, schema, and advanced performance queries for retail analytics.",
+        "link": "Docs"
+      },
+      "site": {
+        "title": "Wine Sales Data Analysis (Tableau)",
+        "body": "Analyzed national sales datasets, identified consumer trends, and built interactive dashboards for data-driven marketing insights.",
+        "link": "Dashboard"
+      },
+      "tools": {
+        "title": "Restaurant Operations Optimization (ARENA)",
+        "body": "Simulated restaurant workflow and proposed changes that reduced average wait time by 30% in model testing.",
+        "link": "Simulation"
+      }
+    },
+    "modals": {
+      "leasing": {
+        "intro": "Full system design with SPV tables, subsidy de-dup, and validated forms; Vue3 + Element Plus front-end with SQL-ready schema.",
+        "point1": "ER → relational schema (3NF) and indexing plan",
+        "point2": "Vue3 form validation & reusable components",
+        "point3": "Data pipeline WIP; docs and diagrams available"
+      },
+      "wa": {
+        "intro": "Oracle SQL – Lululemon Operations Database（Team Lead）",
+        "point1": "Webhook orchestration and fallback logic",
+        "point2": "Prompt cost control and evaluation",
+        "point3": "Planned Apple Wallet Pass integration"
+      },
+      "site": {
+        "intro": "Zero-dependency template with light/dark auto, great for fast deploy and later componentization.",
+        "point1": "Pure HTML + CSS, no build step",
+        "point2": "i18n via JSON loader and data attributes",
+        "point3": "Deployable on GitHub Pages / Cloudflare"
+      },
+      "tools": {
+        "intro": "Batch scripts using pdfplumber / openpyxl / pandas for extraction, cleaning, normalization.",
+        "point1": "CLI workflow and config-driven parsing",
+        "point2": "Consistent naming & audit trail",
+        "point3": "Extensible recipe library"
+      }
+    }
+  },
+  "exp": {
+    "title": "Experience",
+    "badge": "Professional & Leadership",
+    "items": {
+      "intern": {
+        "title": "Business Operations & Product Development Intern · Xiamen Port Development Co., Ltd.",
+        "body": "Collected requirements for 3 client information system projects. Designed system architecture, SQL database, and front-end demos in Vue.js. Implemented AI automation via Dify and ChatGPT, enhancing project efficiency."
+      },
+      "course": {
+        "title": "Eller Rising Professionals · Club Member",
+        "body": "Participated in fundraising and community projects, including 4P’s competition raising $4,000+ and financial literacy outreach events."
+      },
+      "biz": {
+        "title": "Actively Seeking",
+        "body": "Looking for roles in Product, Data Analytics, or Business Technology. Strengthening skills in SQL, Python, Tableau, and system design through ongoing technical projects."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "badge": "Let's Connect",
+    "form": {
+      "title": "Quick Message",
+      "email": "Your Email",
+      "message": "Message",
+      "submit": "Send",
+      "note": "You can also reach me directly at yingchuan3333@gmail.com"
+    },
+    "links": {
+      "title": "Social / Links",
+      "emailLabel": "Email：",
+      "linkedinLabel": "LinkedIn：",
+      "resumeTitle": "Resume",
+      "resumeNote": "View in the new tab PDF.",
+      "resume": "Resume (PDF)",
+      "resumeEN": "Resume (EN)",
+      "resumeZH": "Resume (CN)"
+    }
+  },
+  "footer": {
+    "rights": "© 2025 Yingchuan Chen. All rights reserved.",
+    "built": "Built with ♥ · Hosted on GitHub Pages"
+  }
+}
