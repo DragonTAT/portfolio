@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Blog · Chen</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <style>
+    body{margin:0; font:16px/1.6 system-ui; background:#0b0c0f; color:#e9edf1;}
+    .container{width:min(100% - 32px,1100px); margin:0 auto;}
+    .section-title{margin:32px 0 20px;}
+    .section-title h2{margin:0;font-size:1.8rem;}
+    .tag{display:inline-block;padding:.35rem .6rem;border:1px solid #1f2430;border-radius:999px;color:#a7b0ba;font-size:.85rem}
+    .grid{display:grid; gap:18px;}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:#12151a;border:1px solid #1f2430;border-radius:16px;padding:18px;}
+    .card h3{margin:0 0 6px;font-size:1.15rem;}
+    .muted{color:#a7b0ba;}
+    .btn{display:inline-block;padding:.6rem 1rem;border-radius:999px;border:1px solid #1f2430;color:#e9edf1;text-decoration:none;}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container" style="padding:16px 0; display:flex; justify-content:flex-start;">
+      <a href="../index.html" class="btn">← Back to Home</a>
+    </div>
+  </header>
+  <main class="container">
+
+    <section id="blog-list">
+      <div class="section-title">
+        <h2>Blog</h2>
+        <span class="tag">Latest posts</span>
+      </div>
+
+      <div id="blog-list-container"
+           class="list"
+           style="display:grid; gap:20px;">
+        <!-- Posts will be injected by JavaScript -->
+      </div>
+    </section>
+
+  </main>
+<script>
+  async function loadPosts() {
+    try {
+      const res = await fetch('./posts.json');
+      if (!res.ok) {
+        console.error('Failed to fetch posts.json', res.status);
+        return;
+      }
+      const data = await res.json();
+      const container = document.getElementById('blog-list-container');
+      if (!container || !data.posts) return;
+
+      // Optional: sort by date (descending) if `date` is in YYYY-MM-DD format
+      const posts = data.posts.slice().sort((a, b) => {
+        const da = a.date || '';
+        const db = b.date || '';
+        return db.localeCompare(da);
+      });
+
+      posts.forEach(post => {
+        const article = document.createElement('article');
+        article.className = 'card';
+        article.style.display = 'flex';
+        article.style.flexDirection = 'column';
+        article.style.gap = '6px';
+        article.style.padding = '18px';
+
+        const title = post.title || 'Untitled';
+        const meta = post.meta || (post.date || '');
+        const summary = post.summary || '';
+        const url = post.url || '#';
+
+        article.innerHTML = `
+          <h3 style="margin:0;">${title}</h3>
+          <div class="muted" style="font-size:.9rem;">${meta}</div>
+          <div class="muted">${summary}</div>
+          <div style="margin-top:8px;">
+            <a class="btn" href="${url}" target="_blank" rel="noopener">Read</a>
+          </div>
+        `;
+
+        container.appendChild(article);
+      });
+    } catch (err) {
+      console.error('Error loading posts.json', err);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadPosts);
+</script>
+</body>
+</html>

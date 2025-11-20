@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": "post-1",
+      "date": "2024-11-10",
+      "meta": "Nov 2024 · Personal Site",
+      "title": "Title 1",
+      "summary": "Short description about this post...",
+      "url": "https://your-blog-link-or-post1.html"
+    },
+    {
+      "id": "post-2",
+      "date": "2024-10-05",
+      "meta": "Oct 2024 · Product & Data",
+      "title": "Title 2",
+      "summary": "A quick summary of this article...",
+      "url": "https://..."
+    },
+    {
+      "id": "post-3",
+      "date": "2024-09-20",
+      "meta": "Sep 2024 · Learning Log",
+      "title": "Title 3",
+      "summary": "Something you learned from MIS / IE...",
+      "url": "https://..."
+    }
+  ]
+}

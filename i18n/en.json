@@ -11,8 +11,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Hi, I'm <span style=\"color:var(--accent)\">Chen</span> 👋<br/>A MIS Student @ UA",
-    "lead": "I build data-driven and automation-focused solutions — from AI-powered system design to SQL data modeling and visualization. Experienced in product development, process optimization, and cross-functional collaboration.",
+    "title": "Hi, I'm <span style=\"color:var(--accent)\">Chen</span> 👋",
+    "lead": "I love tinkering with technology and turning ideas into working products — using smarter ways to solve real problems.",
     "cta": {
       "projects": "View Projects",
       "contact": "Contact Me",
@@ -21,9 +21,9 @@
       "resumeZH": "Resume (ZH)"
     },
     "facts": {
-      "location": "📍 Tucson, AZ / Xiamen, CN",
-      "travel": "✈️ Global Wildcat Award Recipient",
-      "llm": "🤖 AI & Automation Projects"
+      "location": "📍 Tucson, AZ",
+      "travel": "✈️ Travel",
+      "llm": "⚽️ Soccer"
     },
     "tags": {
       "now": "Currently",
@@ -31,8 +31,28 @@
       "goals": "Next Goals"
     },
     "now": { "text": "Interning in Product Development & AI Automation · Improving SQL + Vue.js systems" },
-    "skills": { "text": "Python, SQL, Tableau, Vue.js, Dify, ChatGPT, ARENA, Google Analytics" },
+    "skills": { "text": "Python, SQL, Tableau, Dify, ARENA, Google Analytics" },
     "goals": { "text": "Graduate in 2026 · Expand product AI portfolio · Contribute to real-world automation solutions" }
+  },
+  "blog": {
+    "latest": {
+      "title": "Latest Posts",
+      "items": {
+        "1": {
+          "meta": "Nov 2024 · Personal Site",
+          "title": "Title 1"
+        },
+        "2": {
+          "meta": "Oct 2024 · Product & Data",
+          "title": "Title 2"
+        },
+        "3": {
+          "meta": "Sep 2024 · Learning Log",
+          "title": "Title 3"
+        }
+      },
+      "viewAll": "View all"
+    }
   },
   "about": {
     "title": "About Me",
@@ -40,7 +60,7 @@
     "cards": {
       "background": {
         "title": "Background",
-        "body": "Undergraduate student in Management Information Systems & Industrial Engineering at the University of Arizona. Passionate about applying data and automation to improve business efficiency."
+        "body": "Currently a senior majoring in Management Information Systems at the University of Arizona’s Eller College of Management, and a student in the MIS Accelerated Master’s Program (AMP)."
       },
       "focus": {
         "title": "Focus",
@@ -48,11 +68,11 @@
       },
       "stack": {
         "title": "Technical Stack",
-        "body": "Python · SQL · Tableau · Vue.js · Dify · ChatGPT · ARENA Simulation · Google Analytics"
+        "body": "Python · SQL · Tableau · Vue.js · Dify · ARENA Simulation · Google Analytics"
       },
       "interest": {
         "title": "Interests",
-        "body": "AI-powered workflow automation, data visualization, process optimization, and cross-border business innovation."
+        "body": "I enjoy computers, AI, data, photography, skiing, travel, aviation, consumer tech, and football. I love the satisfaction of solving problems and exploring new possibilities through continuous learning."
       }
     }
   },
@@ -66,25 +86,20 @@
         "body": "Led product design and SQL database modeling for a client management system. Built Vue.js demo interface and applied AI automation to optimize workflows, improving delivery efficiency.",
         "link": "Overview"
       },
-      "lululemon": {
+      "wa": {
         "title": "Lululemon Retail Operations Database",
         "body": "Team lead for Oracle SQL database simulation. Created ER diagrams, schema, and advanced performance queries for retail analytics.",
         "link": "Docs"
       },
-      "wine": {
+      "site": {
         "title": "Wine Sales Data Analysis (Tableau)",
         "body": "Analyzed national sales datasets, identified consumer trends, and built interactive dashboards for data-driven marketing insights.",
         "link": "Dashboard"
       },
-      "restaurant": {
+      "tools": {
         "title": "Restaurant Operations Optimization (ARENA)",
         "body": "Simulated restaurant workflow and proposed changes that reduced average wait time by 30% in model testing.",
         "link": "Simulation"
-      },
-      "sunlink": {
-        "title": "Sunlink Tram Real-Time Tracker",
-        "body": "Raspberry Pi + Cloudflare Tunnel project showing live Tucson tram positions with caching and rate-limit handling.",
-        "link": "Live Demo"
       }
     },
     "modals": {
@@ -95,7 +110,7 @@
         "point3": "Data pipeline WIP; docs and diagrams available"
       },
       "wa": {
-        "intro": "NowAI / Dify flow with webhooks and WA Business automation, pricing parser, and Apple Wallet Pass plan.",
+        "intro": "Oracle SQL – Lululemon Operations Database（Team Lead）",
         "point1": "Webhook orchestration and fallback logic",
         "point2": "Prompt cost control and evaluation",
         "point3": "Planned Apple Wallet Pass integration"
@@ -122,13 +137,13 @@
         "title": "Business Operations & Product Development Intern · Xiamen Port Development Co., Ltd.",
         "body": "Collected requirements for 3 client information system projects. Designed system architecture, SQL database, and front-end demos in Vue.js. Implemented AI automation via Dify and ChatGPT, enhancing project efficiency."
       },
-      "club": {
+      "course": {
         "title": "Eller Rising Professionals · Club Member",
         "body": "Participated in fundraising and community projects, including 4P’s competition raising $4,000+ and financial literacy outreach events."
       },
       "other": {
-        "title": "Course & Team Projects",
-        "body": "Designed data models and dashboards across SQL, Tableau, and ARENA; led documentation and presentation for project outcomes."
+        "title": "Actively Seeking",
+        "body": "Looking for roles in Product, Data Analytics, or Business Technology. Strengthening skills in SQL, Python, Tableau, and system design through ongoing technical projects."
       }
     }
   },

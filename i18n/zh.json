@@ -12,7 +12,7 @@
   },
   "hero": {
     "title": "Hi，我是 <span style=\"color:var(--accent)\">陈颖川</span> 👋<br/> ",
-    "lead": "我喜欢把想法做成可用的产品：从<strong>融资租赁信息平台</strong>到<strong>电商与 WhatsApp AI 客服</strong>，也做<strong>数据自动化与前端</strong>。这页是我的简洁主页与项目导航。",
+    "lead": "我喜欢折腾技术，也喜欢把想法做成跑得起来的产品，用更聪明的方式解决问题",
     "cta": {
       "projects": "查看项目",
       "contact": "联系我",
@@ -22,8 +22,8 @@
     },
     "facts": {
       "location": "📍 Tucson / PHX",
-      "travel": "✈️ 旅行与会员",
-      "llm": "🧪 本地 LLM / 树莓派"
+      "travel": "✈️ 旅行",
+      "llm": "⚽️足球"
     },
     "tags": {
       "now": "正在做",
@@ -34,25 +34,45 @@
     "skills": { "text": "Vue 3 / TypeScript / Element Plus · Python 数据处理 · SQL/3NF 设计" },
     "goals": { "text": "毕业与求职 · 打磨 MVP · 发布开源小工具" }
   },
+  "blog": {
+    "latest": {
+      "title": "最新博客",
+      "items": {
+        "1": {
+          "meta": "2024 年 11 月 · 个人网站",
+          "title": "Title 1"
+        },
+        "2": {
+          "meta": "2024 年 10 月 · 产品与数据",
+          "title": "Title 2"
+        },
+        "3": {
+          "meta": "2024 年 9 月 · 学习记录",
+          "title": "Title 3"
+        }
+      },
+      "viewAll": "查看全部"
+    }
+  },
   "about": {
     "title": "关于我",
     "badge": "简短介绍",
     "cards": {
       "background": {
         "title": "背景",
-        "body": "亚利桑那大学 MIS 本科（计划 AMP）；热爱把业务流程系统化与自动化，做过课程项目与企业实习落地。"
+        "body": "目前在亚利桑那大学埃勒管理学院，管理信息系统专业大四学生，同时是管理信息系统本硕连读项目学生"
       },
       "focus": {
         "title": "方向",
-        "body": "产品 / 数据 / 前端三栖：需求梳理 → 数据建模 → 前端实现 → 自动化脚本。"
+        "body": "专注产品开发与数据驱动决策，融合系统设计、流程优化与 AI 自动化。"
       },
       "stack": {
-        "title": "工具栈",
-        "body": "Vue 3 + TS、Element Plus、Python（pandas/openpyxl/pdfplumber）、SQL、GitHub Pages、Raspberry Pi。"
+        "title": "技能",
+        "body": "Python、SQL、Tableau、Dify、ARENA、Google Analytics"
       },
       "interest": {
         "title": "兴趣",
-        "body": "航旅与会员、跨境电商、轻量 AI 工作流、信息可视化。"
+        "body": "喜欢电脑、AI、数据、摄影、滑雪、旅行、航空、消费电子和足球。享受解决问题的成就感，也喜欢在不断学习中探索更多可能"
       }
     }
   },
@@ -67,18 +87,18 @@
         "link": "文档"
       },
       "wa": {
-        "title": "WhatsApp AI 客服与下单",
-        "body": "NowAI / Dify 流程、Webhook、WA Business 自动回复与下单、价目表解析、Apple Wallet Pass 计划。",
+        "title": "零售运营 SQL 数据库（项目负责人）",
+        "body": "主导为 Lululemon 设计零售运营数据库，负责 ERD 建模、数据表结构设计与性能分析查询。带领 4 人团队完成端到端的数据系统搭建。",
         "link": "流程示意"
       },
       "site": {
-        "title": "个人 GitHub Pages 主页",
-        "body": "本模板：纯 HTML+CSS，自适应深浅色，无外部依赖；适合快速部署与后续组件化。",
+        "title": "葡萄酒销售数据可视化分析",
+        "body": "分析大量葡萄酒销售数据，挖掘消费趋势、季节性与地区表现，构建交互式 Tableau 仪表盘，为业务决策提供可视化洞察。",
         "link": "使用说明"
       },
       "tools": {
-        "title": "数据自动化小工具集",
-        "body": "pdfplumber / openpyxl / pandas 批处理：报表抽取、清洗、命名规范化。",
+        "title": "餐厅运营仿真优化（ARENA）",
+        "body": "使用 ARENA 建立完整餐厅运营仿真模型，识别服务瓶颈并测试流程优化方案。优化后模拟平均等待时间降低 30%。",
         "link": "仓库"
       }
     },
@@ -118,18 +138,18 @@
         "body": "流程调研、数据库建模、前端原型、自动化脚本，推动 MVP 上线与迭代。"
       },
       "course": {
-        "title": "课程项目 · 系统分析 & 前端",
-        "body": "ER→关系模型、3NF、前端界面（PureAdmin/Element Plus），撰写文档与展示。"
+        "title": "Eller Rising Professionals · 俱乐部成员",
+        "body": "参与筹款与社区公益活动，包括 4P’s 比赛募资超过 $4,000，以及金融素养教育推广项目。"
       },
       "biz": {
-        "title": "创业尝试 · 电商与渠道",
-        "body": "1。"
+        "title": "正在寻找",
+        "body": "希望加入产品、数据分析或业务技术方向团队，并通过持续的技术项目提升 SQL、Python、可视化和系统设计能力。"
       }
     }
   },
   "contact": {
     "title": "联系我",
-    "badge": "欢迎合作与交流",
+    "badge": "欢迎联系",
     "form": {
       "title": "快速留言",
       "email": "你的邮箱",
